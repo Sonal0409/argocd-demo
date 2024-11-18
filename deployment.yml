@@ -13,11 +13,6 @@ spec:
       labels:
         app: kubeserve
     spec:
-      tolerations:
-        - key: color
-          operator: "Equal"
-          value: "red"
-          effect: "NoSchedule"
       containers:
       - image: leaddevops/kubeserve:v1
         name: app
