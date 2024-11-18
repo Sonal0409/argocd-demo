@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubeserve-argo
+  labels:
+    app: kubeserve
+spec:
+ containers:
+  - image: leaddevops/kubeserve:v1
+    name: app
